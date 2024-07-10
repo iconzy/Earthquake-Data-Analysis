@@ -66,22 +66,25 @@ The data analysis involves several key steps:
    ```python
    # Plot the distribution of earthquake magnitudes
    sns.histplot(df['magnitude'], bins=10, kde=True)
-   ```
-   ![Magnitude Distribution](https://via.placeholder.com/600x400)
+   
+![download](https://github.com/iconzy/Earthquake-Data-Analysis/assets/124740701/ce59943c-a1ee-4f55-98f7-005cfcef97bc)
+
 
 2. **How many earthquakes occurred in each country?**
    ```python
-   # Plot the number of earthquakes per country
+   # Plot the number of earthquakes per country!
+
    sns.countplot(y='country', data=df, order=df['country'].value_counts().index)
-   ```
-   ![Earthquakes per Country](https://via.placeholder.com/600x400)
+ ![download](https://github.com/iconzy/Earthquake-Data-Analysis/assets/124740701/69cad414-3de7-4e1f-9d2c-d0c28e718853)
+
+  
 
 3. **What is the relationship between earthquake magnitude and depth?**
    ```python
    # Plot the magnitude vs. depth
    sns.scatterplot(x='magnitude', y='depth', data=df, hue='alert', palette='coolwarm', s=100)
-   ```
-   ![Magnitude vs Depth](https://via.placeholder.com/600x400)
+ 
+ ![download](https://github.com/iconzy/Earthquake-Data-Analysis/assets/124740701/25a95c54-3c19-4d88-8282-16afe4488c00)
 
 **Conclusion**
 #### Summary of Findings
